@@ -1,0 +1,34 @@
+.appbar{
+    padding: 0px 30px;
+    border-bottom: var(--secondary-color) solid 1px;
+}
+
+.appbar_container{
+    width: 100%;
+    height: 80px;
+    color: inherit;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appbar_title{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.appbar_title h3{
+    font-size: 30px;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}

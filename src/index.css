@@ -1,0 +1,31 @@
+:root{
+    /* COLORS */
+    --primary-color: #222831;
+    --secondary-color: #FEC00A;
+    --white: #FFFFFF;
+    --black-1: #393E46;
+
+    /* PADDINGS */
+    --padding-30: 30px;
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(./assets/fonts/poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+*{
+    font-family: PoppinsRegular;
+    transition: 0.15s all ease-in-out;
+}
+
+body{
+    transition: none;
+}
