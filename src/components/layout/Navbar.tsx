@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC, memo, useState } from 'react';
 import { NavButton } from '../common/NavButton';
 import { NavButton as NavButtonProps } from '../../interfaces';
 
@@ -26,6 +26,12 @@ const navButtons: NavButtonProps[] = [
 ];
 
 export const Navbar: FC<Props> = memo(function Navbar() {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  const ToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <div className="flex flex-row overflow-hidden w-full h-20 py-2 px-10 justify-between items-center">
@@ -35,8 +41,30 @@ export const Navbar: FC<Props> = memo(function Navbar() {
           <h1 className="font-light text-4xl text-white-1">moviable</h1>
         </div>
 
+        <div onClick={ToggleMenu}>
+          <img
+            src="/src/assets/menu_icon.svg"
+            alt="Menu Icon"
+            className="cursor-pointer"
+          />
+        </div>
+
+        {/* Developing menu */}
+        <ul
+          className={`w-full h-full ${menuOpen ? 'flex' : 'hidden'} flex-col bg-black-1 `}
+        >
+          {navButtons.map(({ buttonName, icon, route }) => (
+            <NavButton
+              key={route}
+              buttonName={buttonName}
+              icon={icon}
+              route={route}
+            />
+          ))}
+        </ul>
+
         {/* buttons section */}
-        <ul className="flex flex-row justify-around gap-2">
+        <ul className="hidden sm:flex flex-row gap-2 ">
           {navButtons.map(({ buttonName, icon, route }) => (
             <NavButton
               key={route}

@@ -1,5 +1,6 @@
 import { FC, memo } from 'react';
 import { PageLayout } from '../../components/layout/PageLayout';
+import { TrendingMovies } from '../../components/movie/TrendingMovies';
 
 interface Props {
   className?: string;
@@ -8,9 +9,7 @@ interface Props {
 export const HomePage: FC<Props> = memo(function HomePage() {
   return (
     <PageLayout>
-      <>
-        <div>Hello World</div>
-      </>
+      <TrendingMovies />
     </PageLayout>
   );
 });
