@@ -6,6 +6,7 @@ export default {
       primary: '#ffc107',
       secondary: '#000000',
       'black-1': '#1A3636',
+      'black-2': '#151515',
       'white-1': '#FFFFFF',
       'green-1': '#40534C',
     },

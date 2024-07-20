@@ -11,7 +11,7 @@ export const PageLayout: FC<Props> = ({ className, children }) => {
   return (
     <div
       className={`flex flex-col w-screen h-screen overflow-y-hidden items-center
-        bg-gradient-to-br from-black-1 to-[#151515] text-primary ${className}`}
+        bg-gradient-to-br from-black-1 to-black-2 text-primary ${className}`}
     >
       <Navbar />
       {children}
