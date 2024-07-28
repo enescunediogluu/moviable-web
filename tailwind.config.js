@@ -5,10 +5,17 @@ export default {
     colors: {
       primary: '#ffc107',
       secondary: '#000000',
-      'black-1': '#1A3636',
-      'black-2': '#151515',
+      'black-1': '#0e1c26',
+      'black-2': '#13232c',
       'white-1': '#FFFFFF',
       'green-1': '#40534C',
+      'light-green-1': '#CDFADB',
+      'blue-1': '#172a32',
+      'blue-2': '#1c3139',
+      'blue-3': '21373f',
+      'blue-4': '#253e45',
+      'light-blue-1': '#CAF4FF',
+      'purple-1': '#DFCCFB',
     },
     extend: {
       fontFamily: {

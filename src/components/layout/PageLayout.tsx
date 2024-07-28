@@ -10,11 +10,13 @@ interface Props {
 export const PageLayout: FC<Props> = ({ className, children }) => {
   return (
     <div
-      className={`flex flex-col w-screen h-screen overflow-y-hidden items-center
-        bg-gradient-to-br from-black-1 to-black-2 text-primary ${className}`}
+      className={`flex flex-col w-screen h-screen overflow-auto items-center
+        bg-gradient-to-br from-black-1 to-black-2 ${className}`}
     >
       <Navbar />
-      {children}
+      <div className="fixed top-20 bottom-0 left-0 right-0 overflow-y-auto">
+        <div className="flex flex-col items-center py-2 px-10">{children}</div>
+      </div>
     </div>
   );
 };

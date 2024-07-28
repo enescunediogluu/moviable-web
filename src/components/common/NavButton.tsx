@@ -15,7 +15,7 @@ export const NavButton: FC<Props> = memo(function NavButton({
     <li>
       <a
         href={route}
-        className="flex flex-row items-center justify-center px-4 py-2 gap-2 bg-black-1 hover:bg-green-1 transition ease-in-out delay-100 rounded-xl"
+        className="flex flex-row items-center justify-center px-4 py-2 gap-2 bg-blue-1 hover:bg-blue-4 transition ease-in-out delay-100 rounded-xl"
       >
         <img src={icon} alt="" />
         <h3 className="text-sm text-white-1">{buttonName}</h3>
